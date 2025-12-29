@@ -24,5 +24,7 @@ python manage.py runserver
 
 url : http://127.0.0.1:8000/products/
 
+<img width="1842" height="795" alt="image" src="https://github.com/user-attachments/assets/d94c8be2-8a7e-4b29-85c3-a285b900bf21" />
+
 
  
