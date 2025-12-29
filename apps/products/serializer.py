@@ -2,10 +2,10 @@ from rest_framework import serializers
 from .models import Product
 
 
-class ProductSerialzer(serializers.ModelSerializer):
-    class meta:
+class ProductSerializer(serializers.ModelSerializer):
+    class Meta:
         model = Product
-        fields= "__all__"
+        fields = "__all__"
 
     def validate(self, data):
         name = data.get('name')
@@ -26,4 +26,4 @@ class ProductSerialzer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 {"stock": "Stock cannot be negative."}
             )
-
+        return data
